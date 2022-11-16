@@ -137,8 +137,13 @@ public:
     std::vector<double> solve(double y, bool ignore_extrapolation=true) const;
 
     // returns the input data points
-    std::vector<double> get_x() const { return m_x; }
-    std::vector<double> get_y() const { return m_y; }
+    const std::vector<double>& get_x() const { return m_x; }
+    const std::vector<double>& get_y() const { return m_y; }
+    const std::vector<double>& x() const { return m_x; } 
+    const std::vector<double>& y() const { return m_y; } 
+    const std::vector<double>& b() const { return m_b; } 
+    const std::vector<double>& c() const { return m_c; } 
+    const std::vector<double>& d() const { return m_d; } 
     double get_x_min() const { assert(!m_x.empty()); return m_x.front(); }
     double get_x_max() const { assert(!m_x.empty()); return m_x.back(); }
 
