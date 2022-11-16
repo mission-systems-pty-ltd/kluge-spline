@@ -1,0 +1,9 @@
+/.project
+**/.idea/
+**/__pycache__/
+*.pyc
+**/build
+.vscode/
+*.swp
+/python/dist
+**/*.egg-info
